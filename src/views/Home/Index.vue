@@ -18,15 +18,20 @@
           v-for="l in introduction"
           :key='l.bg'
         >
-          <i class='introduction-bg' :class='setClass(l.bg)' />
+          <i
+            class='introduction-bg'
+            :class='setClass(l.bg)'
+          />
           <p>{{l.desc}}</p>
         </li>
       </ul>
     </section>
+    <Product />
   </div>
 </template>
 
 <script>
+import Product from './Product'
 
 export default {
   name: 'Home',
@@ -52,6 +57,9 @@ export default {
     setClass (key) {
       return `${key}_bg`
     }
+  },
+  components: {
+    Product
   }
 }
 </script>
@@ -66,7 +74,7 @@ export default {
   color: #fff;
   font-size: 18px;
 }
-.size{
+.size {
   background-size: 100% 100%;
 }
 #home {
@@ -74,6 +82,7 @@ export default {
   top: -80px;
   .banner {
     .flex();
+    position: relative;
     height: 720px;
     padding-top: 80px;
     flex-direction: column;
@@ -131,15 +140,15 @@ export default {
           margin-right: 20px;
         }
         .d1_bg {
-          background: url("../assets/d1.png") no-repeat;
+          background: url("~@/assets/d1.png") no-repeat;
           .size();
         }
         .d2_bg {
-          background: url("../assets/d2.png") no-repeat;
+          background: url("~@/assets/d2.png") no-repeat;
           .size();
         }
         .d3_bg {
-          background: url("../assets/d3.png") no-repeat;
+          background: url("~@/assets/d3.png") no-repeat;
           .size();
         }
         p {
@@ -148,8 +157,8 @@ export default {
           line-height: 25px;
           color: rgba(51, 51, 51, 1);
         }
-        &:nth-child(3){
-          border:none;
+        &:nth-child(3) {
+          border: none;
         }
       }
     }
@@ -161,7 +170,7 @@ export default {
       width: 100%;
       z-index: -1;
       height: 100%;
-      filter: blur(8px);
+      filter: blur(5px);
       background: url("~@/assets/banner.png") no-repeat;
       background-size: 100% 100%;
     }
