@@ -4,14 +4,14 @@
       <div class='banner-top-area'>
         <p class='t-color t-first'><span class='t-first-mark'>分布式</span>智能价值网络，让科技更安全</p>
         <p class='t-color'>利用区块链与人工智能，让计算更快捷，存储更安全，交易更隐私</p>
-        <div class='banner-fun'>
+        <!-- <div class='banner-fun'>
           <div>
             Get started
           </div>
           <div>
             Learn more
           </div>
-        </div>
+        </div> -->
       </div>
       <ul class='banner-card'>
         <li
@@ -28,12 +28,14 @@
     </section>
     <Product />
     <Advantage />
+    <Service />
   </div>
 </template>
 
 <script>
 import Product from './Product'
 import Advantage from './Advantage'
+import Service from './Service'
 
 export default {
   name: 'Home',
@@ -61,7 +63,7 @@ export default {
     }
   },
   components: {
-    Product, Advantage
+    Product, Advantage, Service
   }
 }
 </script>
@@ -89,6 +91,8 @@ export default {
     padding-top: 80px;
     flex-direction: column;
     .banner-top-area {
+      position: relative;
+      z-index: 2;
       .flex();
       height: 30%;
       flex-direction: column;
@@ -175,6 +179,15 @@ export default {
       filter: blur(5px);
       background: url("~@/assets/banner.png") no-repeat;
       background-size: 100% 100%;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
     }
   }
 }
