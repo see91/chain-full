@@ -1,11 +1,20 @@
 <template>
-  <a id='Service' name='service'>
+  <a
+    id='Service'
+    name='service'
+  >
     <div class='service-area'>
       <Ptitle>服务行业</Ptitle>
-      <ul class='service-list'>
-        <li
+      <el-carousel
+        type="card"
+        height="390px"
+        :interval='0'
+        class='service-area-center'
+      >
+        <el-carousel-item
           v-for="(l,index) in serviceList"
           :key='index'
+          class='service-list-item'
         >
           <img
             :src='l.src'
@@ -15,8 +24,8 @@
             <p>{{l.title}}</h2>
               <p>{{l.desc}}</p>
           </div>
-        </li>
-      </ul>
+        </el-carousel-item>
+      </el-carousel>
     </div>
   </a>
 </template>
@@ -57,50 +66,51 @@ export default {
   align-items: center;
   justify-content: center;
 }
+
 #Service {
   .flex();
   justify-content: space-around;
-  min-height: 587px;
-  background-color: #F7F7F7;
+  min-height: 630px;
+  background-color: #f7f7f7;
   .service-area {
     width: 80%;
+    .service-area-center {
+      margin-top: 30px;
+    }
   }
-  .service-list {
-    .flex();
+}
+
+.el-carousel__item {
+  .flex();
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 390px;
+  border-radius: 10px;
+  background-color: #fff;
+  img {
     width: 100%;
-    margin-top: 50px;
-    justify-content: space-between;
-    li {
-      width: 30%;
-      min-height: 390px;
-      border-radius: 10px;
-      background-color: #fff;
-      img {
-        width: 100%;
-        height: 50%;
+    height: 100%;
+  }
+  div {
+    .flex();
+    height: 30%;
+    padding: 20px 10%;
+    flex-direction: column;
+    justify-content: space-around;
+    p {
+      width: 100%;
+      &:nth-child(1) {
+        text-align: left;
+        font-size: 24px;
+        font-weight: 500;
+        color: #333333;
+        line-height: 36px;
       }
-      .list-bottom {
-        .flex();
-        height: 50%;
-        padding: 20px;
-        flex-direction: column;
-        justify-content: space-around;
-        p {
-          width: 100%;
-          &:nth-child(1) {
-            text-align: left;
-            font-size: 24px;
-            font-weight: 500;
-            color: #333333;
-            line-height: 36px;
-          }
-          &:nth-child(2) {
-            font-size: 18px;
-            font-weight: 400;
-            color: #666666;
-            line-height: 27px;
-          }
-        }
+      &:nth-child(2) {
+        font-size: 18px;
+        font-weight: 400;
+        color: #666666;
+        line-height: 27px;
       }
     }
   }

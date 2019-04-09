@@ -13,7 +13,6 @@
           v-for="(l,index) in nav"
           :href='l.path'
           :key='index'
-          @click="changeActive"
           :class="{_active:l.path===path}"
         >{{l.name}}</a>
       </ul>
@@ -55,11 +54,6 @@ export default {
     this.path = this.$route.path
     window.onscroll = () => {
       this.topActive = Boolean(document.documentElement.scrollTop > 80)
-    }
-  },
-  methods: {
-    changeActive (x) {
-      console.log(x, '--');
     }
   }
 }
