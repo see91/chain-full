@@ -59,7 +59,7 @@ export default {
   .flex();
   align-items: unset;
   background-color: #f7f7f7;
-  padding-top: 80px;
+  padding: 80px 0;
   .product-area {
     .flex();
     width: 80%;

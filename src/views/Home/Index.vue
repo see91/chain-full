@@ -27,11 +27,13 @@
       </ul>
     </section>
     <Product />
+    <Advantage />
   </div>
 </template>
 
 <script>
 import Product from './Product'
+import Advantage from './Advantage'
 
 export default {
   name: 'Home',
@@ -59,7 +61,7 @@ export default {
     }
   },
   components: {
-    Product
+    Product, Advantage
   }
 }
 </script>
