@@ -1,5 +1,5 @@
 <template>
-  <div id='Service'>
+  <a id='Service' name='service'>
     <div class='service-area'>
       <Ptitle>服务行业</Ptitle>
       <ul class='service-list'>
@@ -18,7 +18,7 @@
         </li>
       </ul>
     </div>
-  </div>
+  </a>
 </template>
 
 <script>

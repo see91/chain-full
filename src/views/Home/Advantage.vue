@@ -1,5 +1,5 @@
 <template>
-  <div id='Advantage'>
+  <a id='Advantage' name='advantage'>
     <div class='advantage-area'>
       <Ptitle>公司优势</Ptitle>
       <ul class='advantage-list'>
@@ -16,7 +16,7 @@
         </li>
       </ul>
     </div>
-  </div>
+  </a>
 </template>
 
 <script>

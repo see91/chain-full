@@ -1,10 +1,10 @@
 <template>
-  <div id='Footer'>
+  <a id='Footer' name='contact'>
     <div class='footer-area'>
       <p>Copyright 2019.All rights reserved.</p>
       <a href='mailto:hezuo@digitalchainall.com'>hezuo@digitalchainall.com</a>
     </div>
-  </div>
+  </a>
 </template>
 
 <style scoped lang="less">

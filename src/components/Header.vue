@@ -1,18 +1,21 @@
 <template>
-  <div id='header'>
+  <div
+    id='header'
+    :class="{hactive:topActive}"
+  >
     <div class='_w'>
       <router-link
         to='/'
         class='logo'
       />
       <ul class='nav'>
-        <router-link
-          tag='li'
+        <a
           v-for="(l,index) in nav"
-          :to='l.path'
+          :href='l.path'
           :key='index'
+          @click="changeActive"
           :class="{_active:l.path===path}"
-        >{{l.name}}</router-link>
+        >{{l.name}}</a>
       </ul>
     </div>
   </div>
@@ -23,25 +26,26 @@ export default {
   data () {
     return {
       path: null,
+      topActive: false,
       nav: [
         {
           path: '/',
           name: '首页'
         },
         {
-          path: '/product',
+          path: '/#product',
           name: '公司产品'
         },
         {
-          path: '/advantage',
+          path: '/#advantage',
           name: '公司优势'
         },
         {
-          path: '/industry',
+          path: '/#service',
           name: '服务行业'
         },
         {
-          path: '/contact',
+          path: '/#contact',
           name: '联系方式'
         }
       ]
@@ -49,6 +53,14 @@ export default {
   },
   mounted () {
     this.path = this.$route.path
+    window.onscroll = () => {
+      this.topActive = Boolean(document.documentElement.scrollTop > 80)
+    }
+  },
+  methods: {
+    changeActive (x) {
+      console.log(x, '--');
+    }
   }
 }
 </script>
@@ -60,10 +72,13 @@ export default {
   justify-content: center;
 }
 @A: 100%;
+.hactive {
+  background-color: #1e1c1a;
+}
 #header {
   .flex();
-  position: relative;
-  z-index: 1;
+  position: fixed;
+  z-index: 3;
   width: @A;
   height: 80px;
   ._w {
@@ -79,12 +94,13 @@ export default {
     .nav {
       .flex();
       height: @A;
-      li {
+      a {
         .flex();
         margin-right: 46px;
         height: @A;
         color: #fff;
         cursor: pointer;
+        text-decoration: none;
       }
       ._active {
         border-bottom: 2px solid #ffffff;
