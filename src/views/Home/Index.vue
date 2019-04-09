@@ -29,6 +29,7 @@
     <Product />
     <Advantage />
     <Service />
+    <Map />
   </div>
 </template>
 
@@ -36,6 +37,7 @@
 import Product from './Product'
 import Advantage from './Advantage'
 import Service from './Service'
+import Map from './Map'
 
 export default {
   name: 'Home',
@@ -63,7 +65,7 @@ export default {
     }
   },
   components: {
-    Product, Advantage, Service
+    Product, Advantage, Service, Map
   }
 }
 </script>
