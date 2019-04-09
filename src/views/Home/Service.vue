@@ -49,7 +49,27 @@ export default {
         {
           src: require('@/assets/Bill.png'),
           title: '票据',
+          desc: '从万物互联到万物互信，所有物联网设置都有一个唯一可信的身份，接入的设备通过区块链来认证身份信息'
+        },
+        {
+          src: require('@/assets/Internet.png'),
+          title: '物联网',
+          desc: '传统溯源方式的最大问题是上网信息是可编辑与修改的，通过区块链的不可窜改特性来记录商品流通情况，更加可信，通用 '
+        },
+        {
+          src: require('@/assets/Traceability.png'),
+          title: '商品溯源',
           desc: '通过区块链技术解决票据的电子化、便捷化及自动化过程 '
+        },
+        {
+          src: require('@/assets/Copyright.png'),
+          title: '版权',
+          desc: '版权的推广需要易操作，可追溯，低费用，区块链版权的解决方案是推广版权的最优选择 '
+        },
+        {
+          src: require('@/assets/Game.png'),
+          title: '游戏',
+          desc: '游戏行业的积分，点卡、装备、交易等上链可保证用户的利益，区块链的特性也会产生新的游戏模式与体验 '
         }
       ]
     };
