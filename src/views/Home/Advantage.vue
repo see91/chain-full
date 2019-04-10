@@ -39,7 +39,7 @@ export default {
           src: require('@/assets/qualification.png'),
           title: '获得多项荣誉资质',
           desc: '获区块链标准委员会、『AI+分布式』科技推动示范单位等荣誉'
-        },
+        }
       ]
     }
   },
@@ -58,10 +58,10 @@ export default {
 #Advantage {
   .flex();
   flex-direction: column;
-  // height: 587px;
   background-color: #fff;
   .advantage-area {
     .flex();
+    margin: 50px 0;
     width: 80%;
     height: 100%;
     flex-direction: column;
@@ -105,6 +105,7 @@ export default {
       flex-direction: column;
       li{
         width: 100%;
+        margin-top: 30px;
       }
     }
   }

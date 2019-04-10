@@ -6,10 +6,35 @@
     <div class='service-area'>
       <Ptitle>服务行业</Ptitle>
       <el-carousel
-        type="card"
+        type='card'
         height="390px"
         :interval='0'
-        class='service-area-center'
+        arrow='always'
+        indicator-position='outside'
+        class='service-area-center serviceCard'
+      >
+        <el-carousel-item
+          v-for="(l,index) in serviceList"
+          :key='index'
+          class='service-list-item'
+        >
+          <img
+            :src='l.src'
+            alt=""
+          >
+          <div class='list-bottom'>
+            <p>{{l.title}}</h2>
+              <p>{{l.desc}}</p>
+          </div>
+        </el-carousel-item>
+      </el-carousel>
+
+      <el-carousel
+        height="390px"
+        :interval='0'
+        arrow='always'
+        indicator-position='outside'
+        class='service-area-center serviceCard_none'
       >
         <el-carousel-item
           v-for="(l,index) in serviceList"
@@ -35,6 +60,7 @@ import Ptitle from './Ptitle'
 export default {
   data () {
     return {
+      max: true,
       serviceList: [
         {
           src: require('@/assets/Bank.png'),
@@ -72,12 +98,12 @@ export default {
           desc: '游戏行业的积分，点卡、装备、交易等上链可保证用户的利益，区块链的特性也会产生新的游戏模式与体验 '
         }
       ]
-    };
+    }
   },
   components: {
     Ptitle
-  },
-};
+  }
+}
 </script>
 
 <style scoped lang="less">
@@ -96,6 +122,16 @@ export default {
     width: 80%;
     .service-area-center {
       margin-top: 30px;
+    }
+    .serviceCard {
+      @media screen and (max-width: 860px) {
+        display: none !important;
+      }
+    }
+    .serviceCard_none {
+      @media screen and (min-width: 860px) {
+        display: none !important;
+      }
     }
   }
 }

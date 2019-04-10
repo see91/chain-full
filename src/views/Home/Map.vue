@@ -26,5 +26,13 @@
     color: #666666;
     line-height: 20px;
   }
+  @media screen and(max-width: 860px) {
+    display: flex;
+    justify-content: center;
+    .location {
+      text-align: center;
+      width: 80%;
+    }
+  }
 }
 </style>
