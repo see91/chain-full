@@ -16,6 +16,30 @@
           :class="{_active:l.path===path}"
         >{{l.name}}</a>
       </ul>
+      <span
+        class="header-button"
+        @click.stop="toggleMenu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+      <div class="nav-right">
+        <ul
+          style="height: 240px;"
+          :style="{'height': langsSelectorIsOpen ? `${40 * 5}px` : '0'}"
+        >
+          <li
+            v-for="(item,index) in nav"
+            :key='index'
+            @click="jumpTo($event,item.path)"
+          >
+            <a>
+              {{item.name}}
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -26,6 +50,7 @@ export default {
     return {
       path: null,
       topActive: false,
+      langsSelectorIsOpen: false,
       nav: [
         {
           path: '/',
@@ -54,6 +79,23 @@ export default {
     this.path = this.$route.path
     window.onscroll = () => {
       this.topActive = Boolean(document.documentElement.scrollTop > 80)
+    }
+  },
+  methods: {
+    closeLangsSelector () {
+      this.langsSelectorIsOpen = !this.langsSelectorIsOpen
+    },
+    toggleMenu () {
+      this.closeLangsSelector()
+      if (!this.menuIsOpen) {
+        this.menuIsOpen = true
+      } else {
+        this.menuIsOpen = false
+      }
+    },
+    jumpTo (e, router) {
+      e.target.href = router
+      this.closeLangsSelector()
     }
   }
 }
@@ -99,6 +141,59 @@ export default {
       ._active {
         border-bottom: 2px solid #ffffff;
       }
+    }
+    .header-button {
+      display: none;
+      float: right;
+      cursor: pointer;
+      span {
+        background-color: #fff;
+        display: block;
+        margin: 7px 0;
+        width: 30px;
+        height: 2px;
+      }
+    }
+    .nav-right {
+      position: absolute;
+      height: 0;
+      top:0;
+      left:0;
+      right:0;
+      ul {
+        background-color: #1e1c1a;
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        -webkit-transition: height 0.6s;
+        transition: height 0.6s;
+
+        li {
+          float: none;
+          line-height: 30px;
+          margin-left: 0;
+          border: none !important;
+          font-size: 14px;
+          -webkit-transition: color 0.4s;
+          transition: color 0.4s;
+          padding: 5px 15px;
+          position: relative;
+          a {
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 860px) {
+    .nav {
+      display: none !important;
+    }
+    .header-button {
+      display: block !important;
     }
   }
 }

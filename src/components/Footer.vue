@@ -1,5 +1,8 @@
 <template>
-  <a id='Footer' name='contact'>
+  <a
+    id='Footer'
+    name='contact'
+  >
     <div class='footer-area'>
       <p>Copyright 2019.All rights reserved.</p>
       <a href='mailto:hezuo@digitalchainall.com'>hezuo@digitalchainall.com</a>
@@ -27,6 +30,12 @@
       font-weight: 400;
       color: #fff;
       line-height: 20px;
+    }
+    @media screen and (max-width: 860px) {
+      flex-direction: column;
+      a {
+        text-decoration: none;
+      }
     }
   }
 }
