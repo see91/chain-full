@@ -1,5 +1,8 @@
 <template>
-  <a id='product' name='product'>
+  <a
+    id='product'
+    name='product'
+  >
     <div class='product-area'>
       <Ptitle>专注于分布式网络与人工智能及5G通讯技术融合</Ptitle>
       <p class='product-intr'>通过区块链的分布式技术与人工智能技术结合，通过充分利用大型企业GPU/FPGA服务器集群、中小型企业分散空余的GPU服务器计算资源以及个人闲置GPU计算资源，搭建一个人工智能的分布式计算平台，通过链全网络把所有人工智能的算力连接起来，为全球各地的分布式商业应用提供基础设施。</p>
@@ -83,9 +86,11 @@ export default {
       }
       .product-f-item-1 {
         background: url("~@/assets/p1.png") no-repeat;
+        background-size: 100% 100%;
       }
       .product-f-item-2 {
         background: url("~@/assets/p2.png") no-repeat;
+        background-size: 100% 100%;
       }
       .product-r {
         .flex();
@@ -129,6 +134,14 @@ export default {
             top: 8px;
             left: -25px;
           }
+        }
+      }
+      @media screen and(max-width:860px) {
+        .product-f-item {
+          display: none;
+        }
+        .product-r {
+          width: 100%;
         }
       }
     }

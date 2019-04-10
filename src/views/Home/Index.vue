@@ -125,6 +125,9 @@ export default {
           }
         }
       }
+      @media screen and (max-width: 860px) {
+        padding: 0 10%;
+      }
     }
     .banner-card {
       .flex();
@@ -167,6 +170,19 @@ export default {
         }
         &:nth-child(3) {
           border: none;
+        }
+        @media screen and(max-width: 860px) {
+          flex-wrap: wrap;
+          height: 70%;
+          padding: 0 5px;
+          text-align: center;
+          .introduction-bg {
+            margin-right: 0;
+          }
+          p {
+            font-size: 12px;
+            line-height: 15px;
+          }
         }
       }
     }

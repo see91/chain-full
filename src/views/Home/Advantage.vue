@@ -58,7 +58,7 @@ export default {
 #Advantage {
   .flex();
   flex-direction: column;
-  height: 587px;
+  // height: 587px;
   background-color: #fff;
   .advantage-area {
     .flex();
@@ -70,6 +70,7 @@ export default {
   .advantage-list {
     .flex();
     width: 100%;
+    margin-top: 50px;
     justify-content: space-between;
     li {
       .flex();
@@ -98,6 +99,12 @@ export default {
           line-height: 24px;
           color: #666666;
         }
+      }
+    }
+    @media screen and(max-width: 860px) {
+      flex-direction: column;
+      li{
+        width: 100%;
       }
     }
   }
