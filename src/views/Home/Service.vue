@@ -33,7 +33,6 @@
         height="390px"
         :interval='0'
         arrow='always'
-        indicator-position='outside'
         class='service-area-center serviceCard_none'
       >
         <el-carousel-item
@@ -140,12 +139,11 @@ export default {
   .flex();
   flex-direction: column;
   justify-content: space-around;
-  min-height: 390px;
   border-radius: 10px;
   background-color: #fff;
   img {
     width: 100%;
-    height: 100%;
+    height: 50%;
   }
   div {
     .flex();
@@ -153,17 +151,16 @@ export default {
     padding: 20px 10%;
     flex-direction: column;
     justify-content: space-around;
+    overflow: hidden;
     p {
       width: 100%;
       &:nth-child(1) {
         text-align: left;
-        font-size: 24px;
         font-weight: 500;
         color: #333333;
         line-height: 36px;
       }
       &:nth-child(2) {
-        font-size: 18px;
         font-weight: 400;
         color: #666666;
         line-height: 27px;
