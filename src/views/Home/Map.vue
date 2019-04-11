@@ -29,7 +29,7 @@ export default {
   },
   data () {
     return {
-      center: { lng: 108.2859211458, lat: 22.8729267184 },
+      center: { lng: 108.286769, lat: 22.866809 },
       zoom: 15,
       show: true,
       location: '广西南宁高新区创新路23号4#楼B座1楼中关村信息谷雨林空间'
