@@ -114,7 +114,7 @@ export default {
 #header {
   .flex();
   position: fixed;
-  z-index: 3;
+  z-index: 99;
   width: @A;
   height: 80px;
   ._w {
@@ -189,6 +189,7 @@ export default {
     }
   }
   @media screen and (max-width: 860px) {
+    background-color: #1e1c1a;
     .nav {
       display: none !important;
     }

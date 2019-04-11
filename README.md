@@ -1,4 +1,4 @@
-# chain-full
+# chain-all
 
 ## Project setup
 ```

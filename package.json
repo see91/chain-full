@@ -1,5 +1,5 @@
 {
-  "name": "chain-full",
+  "name": "chain-all",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,6 +12,7 @@
     "element-ui": "^2.7.2",
     "reset-css": "^4.0.1",
     "vue": "^2.6.6",
+    "vue-baidu-map": "^0.21.19",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
