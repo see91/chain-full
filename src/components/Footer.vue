@@ -4,7 +4,12 @@
     name='contact'
   >
     <div class='footer-area'>
-      <p>Copyright 2019.All rights reserved.</p>
+      <p>Copyright 2019.All rights reserved.
+        <a
+          href='http://www.beian.miit.gov.cn'
+          target='_blank'
+        >桂ICP备19004242号</a>
+      </p>
       <a href='mailto:hezuo@digitalchainall.com'>hezuo@digitalchainall.com</a>
     </div>
   </a>
