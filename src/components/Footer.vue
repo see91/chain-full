@@ -10,7 +10,7 @@
           target='_blank'
         >桂ICP备19004242号</a>
       </p>
-      <a href='mailto:hezuo@digitalchainall.com'>hezuo@digitalchainall.com</a>
+      <a href='mailto:hezuo@digitalchainall.com'>cooperation@digitalchainall.com</a>
     </div>
   </a>
 </template>
