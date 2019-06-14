@@ -29,7 +29,7 @@
     <Product />
     <Advantage />
     <Service />
-    <Map />
+    <!-- <Map /> -->
   </div>
 </template>
 

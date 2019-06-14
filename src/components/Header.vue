@@ -67,10 +67,6 @@ export default {
         {
           path: '/#service',
           name: '服务行业'
-        },
-        {
-          path: '/#contact',
-          name: '联系方式'
         }
       ]
     }

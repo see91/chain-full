@@ -8,9 +8,9 @@
         <a
           href='http://www.beian.miit.gov.cn'
           target='_blank'
-        >桂ICP备19004242号</a>
+        >京ICP备18042327号-3</a>
       </p>
-      <a href='mailto:hezuo@digitalchainall.com'>cooperation@digitalchainall.com</a>
+      <!-- <a href='mailto:hezuo@digitalchainall.com'>cooperation@digitalchainall.com</a> -->
     </div>
   </a>
 </template>
@@ -25,6 +25,7 @@
   .flex();
   height: 99px;
   background: rgba(30, 28, 26, 1);
+  margin-top: -80px;
   .footer-area {
     .flex();
     width: 80%;
