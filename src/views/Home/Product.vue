@@ -4,19 +4,19 @@
     name='product'
   >
     <div class='product-area'>
-      <Ptitle>专注于分布式网络与人工智能及5G通讯技术融合</Ptitle>
-      <p class='product-intr'>通过区块链的分布式技术与人工智能技术结合，通过充分利用大型企业GPU/FPGA服务器集群、中小型企业分散空余的GPU服务器计算资源以及个人闲置GPU计算资源，搭建一个人工智能的分布式计算平台，通过链全网络把所有人工智能的算力连接起来，为全球各地的分布式商业应用提供基础设施。</p>
+      <Ptitle>Company's advantages</Ptitle>
+      <p class='product-intr'>Marco Pay is a leading international company focuses on payment and digital marketing solutions, based in China and Thailand</p>
       <div class='product-f'>
         <div class='product-f-item product-f-item-1' />
         <ul class='product-r'>
           <li>
-            <h2>分布式价值网络系统</h2>
-            <p>提供了基于混合共识双链的分布式区块链技术，使智能设备传输的高效运转和分布式的验证数据保存分隔，互相依存并互相作用，融合5G的技术设备和基站可以实现效率、安全、公平性的完美统一。</p>
+            <!-- <h2>分布式价值网络系统</h2> -->
+            <p>Marco Pay is an innovative digital payment solutions company that enables ewallet and payment apps integration with merchants globally.</p>
           </li>
-          <li>
+          <!-- <li>
             <h2>安全支付产品</h2>
             <p>基于浏览器的安全插件，便于用户安全地管理帐户，并有效便捷地使用帐户做各种交易的签名操作。</p>
-          </li>
+          </li> -->
         </ul>
       </div>
 
@@ -24,13 +24,13 @@
         <div class='product-f-item product-f-item-2' />
         <ul class='product-r'>
           <li>
-            <h2>应用管理平台</h2>
-            <p>管理用户所有上链的商业应用，智能合约全生命周期管理工具，包括合约编译、合约部署、合约管理的功能，应用的日常管理、上链数据统计、上链接口调用等应用相关全生命周期管理。</p>
+            <!-- <h2>应用管理平台</h2> -->
+            <p>Marco Pay company marketing solutions also provide a CRM platform to manage relationships with customers and merchants. By using this platform, every merchants can easily do their online marketing events and accept digital payment such as wechat pay and alipay.</p>
           </li>
-          <li>
+          <!-- <li>
             <h2>多方协作自治模式DAOs 激励体系</h2>
             <p>运行在链全区块链分布式系统上的DAOs (分布式自治组织），可以实现积分所有权、契约义务和业务逻辑规则的计算机算法，通过智能合约运营，在虚拟利益相关者之间自行分配价值。</p>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>

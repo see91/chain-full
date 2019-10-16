@@ -54,23 +54,23 @@ export default {
       nav: [
         {
           path: '/',
-          name: '首页'
+          name: 'Home'
         },
         {
           path: '/#product',
-          name: '公司产品'
+          name: "Company's advantages"
         },
         {
           path: '/#advantage',
-          name: '公司优势'
+          name: 'Our products'
         },
         {
           path: '/#service',
-          name: '服务行业'
+          name: 'clients and partners'
         },
         {
           path: '/#contact',
-          name: '联系方式'
+          name: 'Contact Us'
         }
       ]
     }
@@ -123,8 +123,8 @@ export default {
     height: @A;
     justify-content: space-between;
     .logo {
-      width: 152px;
-      height: 50px;
+      width: 200px;
+      height: 60px;
       background: url("~@/assets/logo.png") no-repeat;
     }
     .nav {

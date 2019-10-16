@@ -5,12 +5,12 @@
   >
     <div class='footer-area'>
       <p>Copyright 2019.All rights reserved.
-        <a
+        <!-- <a
           href='http://www.beian.miit.gov.cn'
           target='_blank'
-        >桂ICP备19004242号</a>
+        >桂ICP备19004242号</a> -->
       </p>
-      <a href='mailto:hezuo@digitalchainall.com'>cooperation@digitalchainall.com</a>
+      <a href='mailto:hezuo@digitalchainall.com'>business@marcopay.com</a>
     </div>
   </a>
 </template>

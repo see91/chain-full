@@ -2,8 +2,8 @@
   <div id="home">
     <section class='banner'>
       <div class='banner-top-area'>
-        <p class='t-color t-first'><span class='t-first-mark'>分布式</span>智能价值网络，让科技更安全</p>
-        <p class='t-color'>利用区块链与人工智能，让计算更快捷，存储更安全，交易更隐私</p>
+        <p class='t-color t-first'><span class='t-first-mark'>Marco Pay</span>a leading international company focuses on solutions for payment and digital marketing </p>
+        <!-- <p class='t-color'>利用区块链与人工智能，让计算更快捷，存储更安全，交易更隐私</p> -->
         <!-- <div class='banner-fun'>
           <div>
             Get started
@@ -18,18 +18,19 @@
           v-for="l in introduction"
           :key='l.bg'
         >
-          <i
+          <!-- <i
             class='introduction-bg'
             :class='setClass(l.bg)'
-          />
+          /> -->
           <p>{{l.desc}}</p>
         </li>
       </ul>
     </section>
     <Product />
     <Advantage />
-    <Service />
-    <Map />
+    <Partner />
+    <!-- <Service />
+    <Map /> -->
   </div>
 </template>
 
@@ -38,6 +39,7 @@ import Product from './Product'
 import Advantage from './Advantage'
 import Service from './Service'
 import Map from './Map'
+import Partner from './Partner'
 
 export default {
   name: 'Home',
@@ -46,15 +48,15 @@ export default {
       introduction: [
         {
           bg: 'd1',
-          desc: '国际知名院士加盟'
+          desc: 'Six years of development experience in Fintech'
         },
         {
           bg: 'd2',
-          desc: '多项分布式、智能运算和区块链等核心技术'
+          desc: 'Accompolished many large scale mobile marketing events for the banking industry'
         },
         {
           bg: 'd3',
-          desc: '首批入驻的高新技术企业'
+          desc: 'Master core operational skills in payment solutions'
         }
       ]
     }
@@ -65,7 +67,7 @@ export default {
     }
   },
   components: {
-    Product, Advantage, Service, Map
+    Product, Advantage, Service, Map, Partner
   }
 }
 </script>
@@ -77,7 +79,7 @@ export default {
   justify-content: center;
 }
 .t-color {
-  color: #fff;
+  color: rgb(218, 189, 189);
   font-size: 18px;
 }
 .size {
@@ -101,6 +103,8 @@ export default {
       justify-content: space-around;
       .t-first {
         font-size: 36px;
+        line-height: 50px;
+        text-align: center;
         .t-first-mark {
           font-size: 50px;
           font-weight: bold;
@@ -140,7 +144,7 @@ export default {
       li {
         .flex();
         width: 30%;
-        height: 50%;
+        height: 80%;
         overflow: hidden;
         padding: 0 30px;
         vertical-align: middle;

@@ -1,7 +1,7 @@
 <template>
   <a id='Advantage' name='advantage'>
     <div class='advantage-area'>
-      <Ptitle>公司优势</Ptitle>
+      <Ptitle>Our products</Ptitle>
       <ul class='advantage-list'>
         <li
           v-for="(l,index) in advantageList"
@@ -27,18 +27,18 @@ export default {
       advantageList: [
         {
           src: require('@/assets/team.png'),
-          title: '十余年经验开发技术团队',
-          desc: '从事软件和分布式开发10余年的专业技术与产品团队'
+          title: 'payment solutions',
+          desc: 'We offer fully secure and easy ways to integrate Online Gateway and Virtual Terminal, that all your business can accept online payments and process payments over the mobile equipments.'
         },
         {
           src: require('@/assets/technology.png'),
-          title: '十多年互联网行业技术沉淀',
-          desc: '团队10年深耕于互联网与大数据行业，拥有互联网行业技术沉淀'
+          title: 'online digital marketing for banks',
+          desc: 'With offices in Beijing and Bangkok, we deliver high performance online digital marketing strategies for banks.'
         },
         {
           src: require('@/assets/qualification.png'),
-          title: '获得多项荣誉资质',
-          desc: '获区块链标准委员会、『AI+分布式』科技推动示范单位等荣誉'
+          title: 'E-CRM platform',
+          desc: 'E-CRM Systems can save you time and money by offering better transaction quality, speed and accuracy of service by improving cash flow management for businesses.'
         }
       ]
     }
@@ -86,6 +86,7 @@ export default {
         height: 100px;
       }
       p {
+        text-align: center;
         &:nth-child(2) {
           font-size: 20px;
           font-weight: 500;
